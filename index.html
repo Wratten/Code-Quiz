@@ -24,7 +24,7 @@
     <main>
       <section class="content">
         <!-- View before starting quiz -->
-        <div class="start-div">
+        <div class="start-screen">
           <h1>Code Quiz</h1>
           <p>
             Put your coding knowledge to the test in this Javascript quiz. If
@@ -37,7 +37,7 @@
           </div>
         </div>
         <!-- Displays the questions and answer buttons-->
-        <div class="question-area">
+        <div class="question-screen">
           <h1 id="question"></h1>
           <div class="answers">
             <button id="answer-1" value="0">1</button>
@@ -45,21 +45,22 @@
             <button id="answer-3" value="2">3</button>
             <button id="answer-4" value="3">4</button>
           </div>
+          <div id="feedback" class=""></div>
         </div>
         <!-- View for the end of quiz displaying score -->
-        <div class="end-div">
+        <div class="end-screen">
           <h1>All done!</h1>
           <h2>Your score is: <span id="quiz-score"></span></h2>
           <form id="score-form">
             <label for="initials">Enter your initials</label>
             <input type="text" id="initials" size="5" maxlength="3" />
-            <button type="Save">Save</button>
+            <button type="save" id="savebtn">Save</button>
           </form>
         </div>
         <!-- View for displaying high scores -->
-        <div class="Leaderboard">
+        <div class="leaderboard">
           <h1>Leaderboard</h1>
-          <ol id="score-list"></ol>
+          <ul id="score-list"></ul>
           <div id="leaderboard-btns">
             <button id="return">Return</button>
             <button id="clear">Clear leaderboard</button>
